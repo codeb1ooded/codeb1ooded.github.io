@@ -220,7 +220,7 @@ padding : 70px 0;
 height : 35px;
 line-height : 35px;
 margin-bottom : 45px;
-background : #F0F0F0;
+background : #d3d3d3;
 border-radius : 0;
 box-shadow : none;
 list-style : none;
@@ -374,11 +374,27 @@ font-size : 60px;
 text-transform : capitalize;
 color : #fff;
 }
-.caption_carousel p {
+.caption_carousel .above_caption_carousel{
 font-family : lato;
 font-size : 14px;
 color : #f6f6f6;
 border-top : 1px solid #fff;
+display : inline;
+line-height : 35px;
+padding : 8px;
+}
+.caption_carousel .middle_caption_carousel{
+font-family : lato;
+font-size : 14px;
+color : #f6f6f6;
+display : inline;
+line-height : 35px;
+padding : 8px;
+}
+.caption_carousel .below_caption_carousel{
+font-family : lato;
+font-size : 14px;
+color : #f6f6f6;
 border-bottom : 1px solid #fff;
 display : inline;
 line-height : 35px;
@@ -546,6 +562,13 @@ text-align : center;
 }
 #tstm_sec {
 background-image : url("../img/testimonial_bg.jpg");
+background-position : center center;
+background-repeat : no-repeat;
+background-size : 100% 100%;
+padding : 40px 0;
+}
+#skill_sec {
+background-image : url("../img/skills_diag.jpg");
 background-position : center center;
 background-repeat : no-repeat;
 background-size : 100% 100%;
