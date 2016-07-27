@@ -788,6 +788,16 @@
 				width: 100%;
 			}
 
+			.heading_image{
+				color:#A411E8; 
+				font-weight: bold;
+				text-shadow:
+				-1px -1px 0 #000,
+				1px -1px 0 #000,
+				-1px 1px 0 #000,
+				1px 1px 0 #000;
+			}
+
 /* List */
 
 	ol {
