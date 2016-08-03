@@ -332,8 +332,8 @@ margin-left : -10px;
 }
 #protfolio_sec .single-portfolio {
 float : left;
-margin-bottom : 10px;
-width : 377px;
+margin : 5px;
+width : 277px;
 }
 #protfolio_sec .single-portfolio:hover .img_hoverlay {
 display : block;
