@@ -789,7 +789,7 @@
 			}
 
 			.heading_image{
-				color:#A411E8; 
+				color:#A411E8;
 				font-weight: bold;
 				text-shadow:
 				-1px -1px 0 #000,
@@ -1068,7 +1068,7 @@
 			border-top-right-radius: 4px;
 			margin: -3em 0 3em -3em;
 			width: calc(100% + 6em);
-			height: 15em;
+			height: 20em;
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
