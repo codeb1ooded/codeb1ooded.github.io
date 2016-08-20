@@ -1093,6 +1093,18 @@
 			width: calc(100%-6em);
 		}
 
+		.item .movieplate{
+			height: 27em;
+			margin-bottom:0px;
+			width: calc(100%-6em);
+		}
+
+		.item .calc{
+			height: 27em;
+			margin-bottom:0px;
+			width: calc(100%-6em);
+		}
+
 			.item header input, .item header select, .item header textarea {
 				color: #ffffff;
 			}
@@ -1192,10 +1204,17 @@
 			width: calc(50% - 2em);
 		}
 
-
+		.items .movieplate-item{
+			margin: 2em 0em 0em 2em;
+			width: calc(25% - 2em);
+		}
 		.items .othello-item{
 			margin: 2em 0em 0em 6em;
 			width: calc(40% - 2em);
+		}
+		.items .calc-item{
+			margin: 2em 0em 0em 2em;
+			width: calc(25% - 2em);
 		}
 
 	@media screen and (max-width: 980px) {
