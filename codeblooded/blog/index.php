@@ -67,6 +67,7 @@
                         <div class="slide-text">
                             <h1>Codeb1ooded</h1>
                             <p>I am currently pursuing my Bachelors in Technology in Computer Science from IGDTUW; I love to &lt;code&gt; and see how it can changed the world in a way we can't even think of; Android App Development, Algorithms, and Operating Systems fascinates me;</p>
+                             <a href="http://codeb1ooded.blogspot.in"> On blogsopt </p>
                         </div>
                         <img src="images/slider/hill.png" class="slider-hill" alt="slider image">
                         <img src="images/slider/house.png" class="slider-house" alt="slider image">
