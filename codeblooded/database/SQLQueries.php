@@ -43,6 +43,7 @@ function get_blog_count(){
     GLOBAL $con;
 
     $sql_get_blog = "SELECT * FROM BLOGS";
+    echo "<script> alert(". $sql_get_blog ."); </script>";
     error_log($sql_get_blog, 0);
     $result_blog = mysqli_query($con, $sql_get_blog);
     return mysqli_num_rows($result_blog);
@@ -97,5 +98,14 @@ function get_blog_image_name($blog_id){
         return $result['IMAGE_NAME'];
     }
     header('location: ../error/404.html');
+}
+
+function get_project($project_id){
+    GLOBAL $con;
+
+    $sql_get_project = "SELECT * FROM PROJECTS WHERE PROJECT_ID=".$project_id;
+    error_log($sql_get_project, 0);
+    $result_project = mysqli_query($con, $sql_get_project);
+    return $result_project;
 }
 ?>

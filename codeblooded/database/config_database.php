@@ -1,5 +1,5 @@
 <?php
-	$con = mysqli_connect("localhost", "id440301_root", "root1234");
+	$con = mysqli_connect("localhost", "root", "");
 	if (!$con) {
 		die('Could not connect: ' . mysqli_error());
 	}

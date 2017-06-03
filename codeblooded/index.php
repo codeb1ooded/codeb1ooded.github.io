@@ -81,17 +81,16 @@
 									<li><a class="page-scroll" href="#abt_sec">About</a></li>
 									<li><a class="page-scroll" href="#pr_sec">Projects <i class="fa fa-angle-down"></i></a>
 										<ul>
-											<li><a class="page-scroll" href="rti.html">RTI Management System</a></li>
-											<li><a class="page-scroll" href="movieplate.html">MoviePlate Android App</a></li>
-											<li><a class="page-scroll" href="othello.html">Othello</a></li>
-											<li><a class="page-scroll" href="eventley.html">Eventley</a></li>
-											<li><a class="page-scroll" href="calculator.html">Calculator</a></li>
+											<li><a class="page-scroll" href="project.php?projectId=11&projectName=rti">RTI Management System</a></li>
+											<li><a class="page-scroll" href="project.php?projectId=12&projectName=movieplate">MoviePlate Android App</a></li>
+											<li><a class="page-scroll" href="project.php?projectId=13&projectName=othello">Othello</a></li>
+											<li><a class="page-scroll" href="project.php?projectId=14&projectName=eventley">Eventley</a></li>
+											<li><a class="page-scroll" href="project.php?projectId=15&projectName=calc">Calculator</a></li>
 										</ul>
 									</li>
 									<li><a class="page-scroll" href="blog/">Blog</a></li>
 									<li><a class="page-scroll" href="#tstm_sec">Achievements</a></li>
 									<li><a class="page-scroll" href="#tm_sec">Technical Skills</a></li>
-									<!-- <li><a class="page-scroll" href="#protfolio_sec">More About Projects</a></li> -->
 									<li><a class="page-scroll" href="#ctn_sec">Contact Me</a></li>
 									<li><a class="page-scroll" href="resume_pdf.pdf" download="Megha_Aggarwal">Resume</a></li>
 
@@ -417,110 +416,110 @@
                     <div class="row">
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
                             <div class="single-portfolio calculator-project">
-                                <img class="img-responsive" src="images/project/calc/calc1.jpg" alt="calculator project">
+                                <img class="img-responsive" src="images/project/calc/calc1.png" alt="calculator project">
                             </div>
                         </div>
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
                             <div class="single-portfolio calculator-project">
-                                <img class="img-responsive" src="images/project/calc/calc2.jpg" alt="calculator project">
+                                <img class="img-responsive" src="images/project/calc/calc2.png" alt="calculator project">
                             </div>
                         </div>
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
                             <div class="single-portfolio calculator-project">
-                                <img class="img-responsive" src="images/project/calc/calc3.jpg" alt="calculator project">
+                                <img class="img-responsive" src="images/project/calc/calc3.png" alt="calculator project">
                             </div>
                         </div>
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
                             <div class="single-portfolio calculator-project">
-                                <img class="img-responsive" src="images/project/calc/calc4.jpg" alt="calculator project">
+                                <img class="img-responsive" src="images/project/calc/calc4.png" alt="calculator project">
                             </div>
                         </div>
                     </div>
                     <div class="row">
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 						<div class="single-portfolio calculator-project">
-							<img class="img-responsive" src="images/project/calc/calc5.jpg" alt="calculator project">
+							<img class="img-responsive" src="images/project/calc/calc5.png" alt="calculator project">
 						</div>
 					</div>
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 						<div class="single-portfolio calculator-project">
-							<img class="img-responsive" src="images/project/calc/calc6.jpg" alt="calculator project">
+							<img class="img-responsive" src="images/project/calc/calc6.png" alt="calculator project">
 						</div>
 					</div>
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 						<div class="single-portfolio calculator-project">
-							<img class="img-responsive" src="images/project/calc/calc7.jpg" alt="calculator project">
+							<img class="img-responsive" src="images/project/calc/calc7.png" alt="calculator project">
 						</div>
 					</div>
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 						<div class="single-portfolio calculator-project">
-							<img class="img-responsive" src="images/project/calc/calc8.jpg" alt="calculator project">
+							<img class="img-responsive" src="images/project/calc/calc8.png" alt="calculator project">
 						</div>
 					</div>
                     </div>
                     <div class="row">
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 						<div class="single-portfolio calculator-project">
-							<img class="img-responsive" src="images/project/calc/calc9.jpg" alt="calculator project">
+							<img class="img-responsive" src="images/project/calc/calc9.png" alt="calculator project">
 						</div>
 					</div>
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 						<div class="single-portfolio movieplate-project">
-							<img class="img-responsive" src="images/project/movieplate/project_movieplate1.jpg" alt="movieplate project">
+							<img class="img-responsive" src="images/project/movieplate/project_movieplate1.png" alt="movieplate project">
 						</div>
 					</div>
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 						<div class="single-portfolio movieplate-project">
-							<img class="img-responsive" src="images/project/movieplate/project_movieplate2.jpg" alt="movieplate project">
+							<img class="img-responsive" src="images/project/movieplate/project_movieplate2.png" alt="movieplate project">
 						</div>
 					</div>
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 						<div class="single-portfolio movieplate-project">
-							<img class="img-responsive" src="images/project/movieplate/project_movieplate3.jpg" alt="movieplate project">
-						</div>
-					</div>
-                    </div>
-                    <div class="row">
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-						<div class="single-portfolio movieplate-project">
-							<img class="img-responsive" src="images/project/movieplate/project_movieplate4.jpg" alt="movieplate project">
-						</div>
-					</div>
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-						<div class="single-portfolio movieplate-project">
-							<img class="img-responsive" src="images/project/movieplate/project_movieplate5.jpg" alt="movieplate project">
-						</div>
-					</div>
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-						<div class="single-portfolio movieplate-project">
-							<img class="img-responsive" src="images/project/movieplate/project_movieplate6.jpg" alt="movieplate project">
-						</div>
-					</div>
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-						<div class="single-portfolio movieplate-project">
-							<img class="img-responsive" src="images/project/movieplate/project_movieplate7.jpg" alt="movieplate project">
+							<img class="img-responsive" src="images/project/movieplate/project_movieplate3.png" alt="movieplate project">
 						</div>
 					</div>
                     </div>
                     <div class="row">
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 						<div class="single-portfolio movieplate-project">
-							<img class="img-responsive" src="images/project/movieplate/project_movieplate8.jpg" alt="movieplate project">
+							<img class="img-responsive" src="images/project/movieplate/project_movieplate4.png" alt="movieplate project">
 						</div>
 					</div>
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 						<div class="single-portfolio movieplate-project">
-							<img class="img-responsive" src="images/project/movieplate/project_movieplate9.jpg" alt="movieplate project">
+							<img class="img-responsive" src="images/project/movieplate/project_movieplate5.png" alt="movieplate project">
 						</div>
 					</div>
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 						<div class="single-portfolio movieplate-project">
-							<img class="img-responsive" src="images/project/movieplate/project_movieplate10.jpg" alt="movieplate project">
+							<img class="img-responsive" src="images/project/movieplate/project_movieplate6.png" alt="movieplate project">
 						</div>
 					</div>
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 						<div class="single-portfolio movieplate-project">
-							<img class="img-responsive" src="images/project/movieplate/project_movieplate11.jpg" alt="movieplate project">
+							<img class="img-responsive" src="images/project/movieplate/project_movieplate7.png" alt="movieplate project">
+						</div>
+					</div>
+                    </div>
+                    <div class="row">
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+						<div class="single-portfolio movieplate-project">
+							<img class="img-responsive" src="images/project/movieplate/project_movieplate8.png" alt="movieplate project">
+						</div>
+					</div>
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+						<div class="single-portfolio movieplate-project">
+							<img class="img-responsive" src="images/project/movieplate/project_movieplate9.png" alt="movieplate project">
+						</div>
+					</div>
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+						<div class="single-portfolio movieplate-project">
+							<img class="img-responsive" src="images/project/movieplate/project_movieplate10.png" alt="movieplate project">
+						</div>
+					</div>
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+						<div class="single-portfolio movieplate-project">
+							<img class="img-responsive" src="images/project/movieplate/project_movieplate11.png" alt="movieplate project">
 						</div>
 					</div>
                     </div>
