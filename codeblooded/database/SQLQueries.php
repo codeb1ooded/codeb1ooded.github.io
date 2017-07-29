@@ -106,6 +106,9 @@ function get_project($project_id){
     $sql_get_project = "SELECT * FROM PROJECTS WHERE PROJECT_ID=".$project_id;
     error_log($sql_get_project, 0);
     $result_project = mysqli_query($con, $sql_get_project);
-    return $result_project;
+    if($result = mysqli_fetch_assoc($result_project)){
+        return $result;
+    }
+    header('location: error/404.html');
 }
 ?>
