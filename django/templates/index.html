@@ -236,7 +236,7 @@
 </section>
 <!-- End our achievement Section -->
 
-<div class="project-card">
+<!--<div class="project-card">
   <div class="meta">
 	<div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
 	<ul class="details">
@@ -284,98 +284,37 @@
 	  <a href="#">Read More</a>
 	</p>
   </div>
-</div>
+</div>-->
 
 <!-- start Project Section -->
 <section id="project_sec">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-				<div class="title_sec">
-					<h1>MY PROJECTS</h1>
-					<h2>SOME OF MY PROJECTS WITH SOME IN WORKING PHASE</h2>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+			<div class="title_sec">
+				<h1>MY PROJECTS</h1>
+				<h2>SOME OF MY PROJECTS WITH SOME IN WORKING PHASE</h2>
+			</div>
+
+			{% for project in projects %}
+			{% if forloop.counter0|divisibleby:"3" %}
 				</div>
-			</div>
+				<div class="row">
+			{% endif %}
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<a href="">
+				<a href="{{ project.star_link | safe }}">
 					<div class="service">
-						<i class="fa fa-child"></i>
-						<h2>Shikshak Arohan</h2>
+						<i class="{{ project.fa_icon | safe }}"></i>
+						<h2>{{ project.title | safe }}</h2>
 						<div class="service_hoverly">
-							<i class="fa fa-child"></i>
-							<h2>Shikshak Arohan</h2>
-							<p>A software which is used to monitor student-teacher ratio and (actual) percentage attendance of teachers in Government schools across India.</p>
+							<i class="{{ project.fa_icon | safe }}"></i>
+							<h2>{{ project.title | safe }}</h2>
+							<p>{{ project.description | safe }}</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<a href="https://rti-igdtuw.000webhostapp.com/">
-					<div class="service">
-						<i class="fa fa-info"></i>
-						<h2>RTI Management System</h2>
-						<div class="service_hoverly">
-							<i class="fa fa-info"></i>
-							<h2>RTI Management System </h2>
-							<p>Project focuses on automating the RTI system in government institutions. Technologies used: HTML, CSS, Bootstrap, JS, PHP, XAMPP, MySQL Database</p>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<a href="https://github.com/codeb1ooded/movieplate">
-					<div class="service">
-						<i class="fa fa-file-movie-o"></i>
-						<h2>MOVIEPLATE</h2>
-						<div class="service_hoverly">
-							<i class="fa fa-file-movie-o"></i>
-							<h2>MOVIEPLATE</h2>
-							<p>Android app to let you browse popular, rated & now playing movies and TV shows. Also manage your watchlist here. This is a proptotype. Technologies used: Java, XML, APIs, Android libraries(Retrofit, GSON, Picasso, etc.), MySQL Database</p>
-						</div>
-					</div>
-				</a>
-			</div>
+			{% endfor %}
 		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<a href="https://github.com/codeb1ooded/OSM-EventGrade">
-					<div class="service">
-						<i class="fa fa-globe"></i>
-						<h2>EVENTLEY</h2>
-						<div class="service_hoverly">
-							<i class="fa fa-globe"></i>
-							<h2>EVENTLEY</h2>
-							<p>Eventley help users to find popular and relevant(weather on day is fine) events near him on basis of his choice of category by analyzing events based on number of likes, number of comments, number of images, weather at time of event, etc.</p>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<a href="https://github.com/codeb1ooded/Othello">
-					<div class="service">
-						<i class="fa fa-gamepad"></i>
-						<h2>OTHELLO</h2>
-						<div class="service_hoverly">
-							<i class="fa fa-gamepad"></i>
-							<h2>OTHELLO</h2>
-							<p> Othello is orignially a 1988 video game published by Acclaim Entertainment, made for the Nintendo Entertainment System. This is a board game made on similar concept with help of Java and its libraries with a UI interface.</p>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<a href="https://github.com/codeb1ooded/Calculator">
-					<div class="service">
-						<i class="fa fa-calculator"></i>
-						<h2>CALCULATOR APP</h2>
-						<div class="service_hoverly">
-							<i class="fa fa-calculator"></i>
-							<h2>CALCULATOR APP</h2>
-							<p> An android app which not only includes basic mathematics or some scientfic  functions, but also, conversion of number system</p>
-						</div>
-					</div>
-				</a>
-			</div>
 		</div>
 	</div>
 </section>
