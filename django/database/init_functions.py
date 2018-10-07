@@ -382,3 +382,85 @@ def initProjects():
                 CONTRIBUTION = '',
                 ASSOCIATED_ACHIEVEMENT = '')
     project.save()
+
+
+def initTimeline():
+    timeline_object = Timeline(TIMELINE_ID = 6,
+                TITLE = 'Android developer at The Testament',
+                CONTENT = """
+                <ul style="padding:0 40px">
+                    <li>Worked on <a href="https://play.google.com/store/apps/details?id=in.thetestament.market_acquire">Market Acquire</a></li>
+                    <li>Worked on features including Firebase, Bug fixes, Dynamic Views, etc.</li>
+                    <li>Market Acquire is a business-specific data management tool developed by The Testament which effortlessly manages the registration data collected on field.</li>
+                    <li>Major Features of app:<br/>1. Save the forms in the app with a simple click, especially when internet connectivity is not available.<br/>2. Attach photos to the form directly using your phone camera.<br/>3. Upload any number of forms directly to the server in one go.</li>
+                    <li>Company website: <a href="http://www.thetestament.com"> The Testament </a></li>
+                </ul>
+                """,
+                TIME = 'JULY 2017',
+                CATEGORY = '')
+    timeline_object.save()
+    timeline_object = Timeline(TIMELINE_ID = 5,
+                TITLE = 'Participated in Smart India Hackathon 2017',
+                CONTENT = """
+                <ul style="padding:0 40px">
+                    <li>Won competition under NCPCR with 1st position.</li>
+                    <li>Team name mentioned in Winners list on <a href="https://blog.mygov.in/wp-content/uploads/2017/04/Winners-details.pdf">MyGov</a></li>
+                    <li>Team Leader of team comprised of 6 girls and two mentors. Team Name : TechnoTwisters</li>
+                    <li>Created a product named <a href="#">Shikshak Arohan</a> comprising of both an android app and website.</li>
+                    <li>Product was focused on monitoring Teacher-Student ratio in govt. schools efficiently and track attendance of teachers.</li>
+                    <li>Gave idea submission under NCPCR and UGC, was selected for both.</li>
+                </ul>
+                """,
+                TIME = 'DECEMBER 2016 - APRIL 2017',
+                CATEGORY = 'timeline-inverted')
+    timeline_object.save()
+    timeline_object = Timeline(TIMELINE_ID = 4,
+                TITLE = 'Android Developer at Creapptic Technologies',
+                CONTENT = """
+                <ul style="padding:0 40px">
+                    <li>Worked on android apps Trading Adda & Rotary Mysore West</li>
+                    <li>Trading Adda: <a href="https://play.google.com/store/apps/details?id=trading.adda"> On playstore </a></li>
+                    <li>Rotary Mysore West: <a href="https://play.google.com/store/apps/details?id=naddy.rotary"> On playstore </a></li>
+                </ul>
+                """,
+                TIME = 'OCTOBER 2014 - PRESENT',
+                CATEGORY = '')
+    timeline_object.save()
+    timeline_object = Timeline(TIMELINE_ID = 3,
+                TITLE = 'B.Tech. Computer Scienece',
+                CONTENT = """
+                <ul style="padding:0 40px">
+                    <li>From Indira Gandhi Delhi Technical University for Women.</li>
+                    <li>Aggregate percentage till 6th Semester is 85.77%</li>
+                    <li>Upgraded from IT to CSE after 1st Year.</li>
+                    <li>Participated in Online social media training during June-July 2016.</li>
+                    <li>Took session on git and similar topics.</li>
+                </ul>
+                """,
+                TIME = 'AUGUST 2014 - MAY 2018',
+                CATEGORY = 'timeline-inverted')
+    timeline_object.save()
+    timeline_object = Timeline(TIMELINE_ID = 2,
+                TITLE = '12th from CBSE',
+                CONTENT = """
+                <ul style="padding:0 40px">
+                    <li>Scored 94.6% in 12th Standard</li>
+                    <li>Completed from Vivekanad School.</li>
+                    <li>Subjects: Physics, Chemistry, Maths, Computer Science & English</li>
+                    <li>Had an academic scholarship of 50% during 12th.</li>
+                </ul>
+                """,
+                TIME = 'APRIL 2013 - MAY 2014',
+                CATEGORY = '')
+    timeline_object.save()
+    timeline_object = Timeline(TIMELINE_ID = 1,
+                TITLE = '10th from CBSE',
+                CONTENT = """
+                <ul style="padding:0 40px">
+                    <li>Scored 10/10 CGPA in 10th Standarad</li>
+                    <li>Completed from Nav Jeevan Adarsh Public School</li>
+                </ul>
+                """,
+                TIME = 'APRIL 2011 - MAY 2012',
+                CATEGORY = 'timeline-inverted')
+    timeline_object.save()

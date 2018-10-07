@@ -324,139 +324,22 @@
 <h2 id="title-work-experience">Education & Work Experience</h2>
 <div id="container-timeline">
 	<ul class="timeline">
-
-		<li>
+		{% for event in timeline %}
+		<li class="{{ event.category | safe }}">
 			<div class="timeline-badge">
 				<a><i class="fa fa-circle" id=""></i></a>
 			</div>
 			<div class="timeline-panel">
 				<div class="timeline-heading">
-					<h4>Android developer at The Testament</h4>
+					<h4>{{ event.title | safe }}</h4>
 				</div>
-				<div class="timeline-body">
-					<ul style="padding:0 40px">
-						<li>Worked on <a href="https://play.google.com/store/apps/details?id=in.thetestament.market_acquire">Market Acquire</a></li>
-						<li>Worked on features including Firebase, Bug fixes, Dynamic Views, etc.</li>
-						<li>Market Acquire is a business-specific data management tool developed by The Testament which effortlessly manages the registration data collected on field.</li>
-						<li>Major Features of app:<br/>1. Save the forms in the app with a simple click, especially when internet connectivity is not available.<br/>2. Attach photos to the form directly using your phone camera.<br/>3. Upload any number of forms directly to the server in one go.</li>
-						<li>Company website: <a href="http://www.thetestament.com"> The Testament </a></li>
-					</ul>
-				</div>
+				<div class="timeline-body"> {{ event.content | safe }} </div>
 				<div class="timeline-footer">
-					<p class="text-right">JULY 2017</p>
+					<p class="text-right">{{ event.time | safe }}</p>
 				</div>
 			</div>
 		</li>
-
-		<li class="timeline-inverted">
-			<div class="timeline-badge">
-				<a><i class="fa fa-circle invert" id=""></i></a>
-			</div>
-			<div class="timeline-panel">
-				<div class="timeline-heading">
-					<h4>Participated in Smart India Hackathon 2017</h4>
-				</div>
-				<div class="timeline-body">
-					<ul style="padding:0 40px">
-						<li>Won competition under NCPCR with 1st position.</li>
-						<li>Team name mentioned in Winners list on <a href="https://blog.mygov.in/wp-content/uploads/2017/04/Winners-details.pdf">MyGov</a></li>
-						<li>Team Leader of team comprised of 6 girls and two mentors. Team Name : TechnoTwisters</li>
-						<li>Created a product named <a href="#">Shikshak Arohan</a> comprising of both an android app and website.</li>
-						<li>Product was focused on monitoring Teacher-Student ratio in govt. schools efficiently and track attendance of teachers.</li>
-						<li>Gave idea submission under NCPCR and UGC, was selected for both.</li>
-					</ul>
-				</div>
-				<div class="timeline-footer">
-					<p class="text-right">DECEMBER 2016 - APRIL 2017</p>
-				</div>
-			</div>
-		</li>
-
-		<li>
-			<div class="timeline-badge">
-				<a><i class="fa fa-circle" id=""></i></a>
-			</div>
-			<div class="timeline-panel">
-				<div class="timeline-heading">
-					<h4>Android Developer at Creapptic Technologies</h4>
-				</div>
-				<div class="timeline-body">
-					<ul style="padding:0 40px">
-						<li>Worked on android apps Trading Adda & Rotary Mysore West</li>
-						<li>Trading Adda: <a href="https://play.google.com/store/apps/details?id=trading.adda"> On playstore </a></li>
-						<li>Rotary Mysore West: <a href="https://play.google.com/store/apps/details?id=naddy.rotary"> On playstore </a></li>
-					</ul>
-				</div>
-				<div class="timeline-footer">
-					<p class="text-right">OCTOBER 2014 - PRESENT</p>
-				</div>
-			</div>
-		</li>
-
-		<li class="timeline-inverted">
-			<div class="timeline-badge">
-				<a><i class="fa fa-circle invert" id=""></i></a>
-			</div>
-			<div class="timeline-panel">
-				<div class="timeline-heading">
-					<h4>B.Tech. Computer Scienece</h4>
-				</div>
-				<div class="timeline-body">
-					<ul style="padding:0 40px">
-						<li>From Indira Gandhi Delhi Technical University for Women.</li>
-						<li>Aggregate percentage till 6th Semester is 85.77%</li>
-						<li>Upgraded from IT to CSE after 1st Year.</li>
-						<li>Participated in Online social media training during June-July 2016.</li>
-						<li>Took session on git and similar topics.</li>
-					</ul>
-				</div>
-				<div class="timeline-footer">
-					<p class="text-right">AUGUST 2014 - MAY 2018 (Expected)</p>
-				</div>
-			</div>
-		</li>
-
-		<li>
-			<div class="timeline-badge">
-				<a><i class="fa fa-circle" id=""></i></a>
-			</div>
-			<div class="timeline-panel">
-				<div class="timeline-heading">
-					<h4>12th from CBSE</h4>
-				</div>
-				<div class="timeline-body">
-					<ul style="padding:0 40px">
-						<li>Scored 94.6% in 12th Standard</li>
-						<li>Completed from Vivekanad School.</li>
-						<li>Subjects: Physics, Chemistry, Maths, Computer Science & English</li>
-						<li>Had an academic scholarship of 50% during 12th.</li>
-					</ul>
-				</div>
-				<div class="timeline-footer">
-					<p class="text-right">APRIL 2013 - MAY 2014</p>
-				</div>
-			</div>
-		</li>
-
-		<li class="timeline-inverted">
-			<div class="timeline-badge">
-				<a><i class="fa fa-circle invert" id=""></i></a>
-			</div>
-			<div class="timeline-panel">
-				<div class="timeline-heading">
-					<h4>10th from CBSE</h4>
-				</div>
-				<div class="timeline-body">
-					<ul style="padding:0 40px">
-						<li>Scored 10/10 CGPA in 10th Standarad</li>
-						<li>Completed from Nav Jeevan Adarsh Public School</li>
-					</ul>
-				</div>
-				<div class="timeline-footer">
-					<p class="text-right">APRIL 2011 - MAY 2012</p>
-				</div>
-			</div>
-		</li>
+		{% endfor %}
 
 		<li class="clearfix no-float"></li>
 	</ul>
@@ -479,8 +362,8 @@
 						{% with 'images/'|add:skill.image as image_static %}
 							<img src="{% static image_static %}" alt=""/>
 						{% endwith %}
-						<h3> {{ skill.title }} <span>{{ skill.sub_title }}</span></h3>
-						<p>{{ skill.description }}</p>
+						<h3> {{ skill.title | safe }} <span>{{ skill.sub_title | safe }}</span></h3>
+						<p>{{ skill.description | safe }}</p>
 					</div>
 					{% endfor %}
 				</div>

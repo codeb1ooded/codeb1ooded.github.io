@@ -59,3 +59,13 @@ class Project(models.Model):
 
     def __str__(self):
 		return str(self.PROJECT_ID) + '-' +self.TITLE
+
+
+class Timeline(models.Model):
+    TIMELINE_ID = models.IntegerField(primary_key=True)
+    TITLE = models.CharField(max_length=100)
+    CONTENT = models.CharField(max_length=5000)
+    TIME = models.CharField(max_length=100, null=True, blank=True)
+    CATEGORY = models.CharField(max_length=100, null=True, blank=True) # normal or inverted
+    def __str__(self):
+		return str(self.TIMELINE_ID) + '-' +self.TITLE
