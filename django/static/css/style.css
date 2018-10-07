@@ -170,31 +170,10 @@ a:hover {
 #abt_sec {
 	padding : 70px 0;
 }
-.happy_use {
-	float : right;
-	font-family : open sans;
-	line-height : 6px;
-	text-align : center;
-	margin-top : 10px;
-}
-.happy_use > h2 {
-	color : #2c3e50;
-	font-size : 17px;
-	font-weight : 600;
-	margin : 0;
-}
-.happy_use > p {
-	font-size : 16px;
-	margin : 0;
-}
 .lft_hd img {
 	float : left;
-	margin-right : 30px;
-	margin-top : 19px;
+	margin : 15px;
 	width : 76px;
-}
-#pricing_sec {
-	padding : 70px 0;
 }
 .title_sec {
 	margin : 0 auto;
@@ -234,109 +213,6 @@ a:hover {
 }
 .progress-bar1 .progress-bar {
 	background : #00AFF0;
-}
-#lts_sec {
-	padding-top : 30px;
-}
-.all_brouse_btn {
-	border : #666666 solid 1px;
-	color : #666666;
-	font-size : 12px;
-	text-transform : uppercase;
-	padding : 15px 20px;
-	text-align : center;
-	background : #fff;
-}
-.post_btn {
-	width : 100%;
-	display : inline-block;
-	margin : 0 auto;
-	text-align : center;
-	padding-top : 65px;
-}
-.post_btn a {
-	position : relative;
-	display : inline-block;
-	margin : 15px 25px;
-	outline : none;
-	color : #fff;
-	text-decoration : none;
-	text-transform : uppercase;
-	letter-spacing : 1px;
-	font-weight : 400;
-	text-shadow : 0 0 1px rgba(255, 255, 255, 0.3);
-	font-size : 1.35em;
-}
-.hover_effect_btn {
-	position : relative;
-	z-index : 1;
-}
-.hover_effect_btn a {
-	overflow : hidden;
-	margin : 0 15px;
-}
-.hover_effect_btn a span {
-	font-size : 12px;
-	font-family : lato;
-	background : none 0 0 repeat scroll #fff;
-	border : #666666 solid 1px;
-	border-radius : 6px;
-	color : #666666;
-	display : block;
-	padding : 15px 20px;
-	transition : transform 0.3s;
-}
-.hover_effect_btn a::before {
-	background : none 0 0 repeat scroll #00AFF0;
-	color : #fff;
-	height : 100%;
-	left : 0;
-	padding : 15px 20px;
-	position : absolute;
-	top : 0;
-	transition : transform 0.3s 0s ease;
-	width : 100%;
-	z-index : -1;
-	font-size : 12px;
-	font-family : lato;
-	border : #666666 solid 1px;
-	border-radius : 6px;
-}
-/*.hover_effect_btn a:hover span, .hover_effect_btn a:focus span {
-transform : translateX(100%);
-}
-.hover_effect_btn a:hover::before, .hover_effect_btn a:focus::before {
-transform : translateX(0%);
-}*/
-#protfolio_sec ul.filter {
-	color : #2e2e2e;
-}
-#protfolio_sec ul.filter li {
-	color : #666666;
-	cursor : pointer;
-	display : inline-block;
-	font-family : lato;
-	font-size : 14px;
-	margin-right : 5px;
-	padding : 15px 35px;
-	position : relative;
-}
-#protfolio_sec ul.filter li:hover {
-	color : #36BFF3;
-}
-#protfolio_sec ul.filter li.active {
-	border-bottom : 1px solid #00AFF0;
-}
-#protfolio_sec .all-portfolios {
-	margin-top : 20px;
-	margin-left : -10px;
-}
-#protfolio_sec .single-portfolio {
-	float : left;
-	width : 277px;
-}
-#protfolio_sec .single-portfolio:hover .img_hoverlay {
-	display : block;
 }
 #message {
 	height : 90px;
@@ -423,29 +299,6 @@ transform : translateX(0%);
 	width : 25px;
 	height : 7px;
 	background-color : #00AFF0;
-}
-#counting_sec {
-	background : none 0 0 repeat scroll #f0f0f0;
-	padding : 90px 0;
-}
-.counting_sl h2 {
-	color : #515050;
-	font-size : 48px;
-}
-.counting_sl h4 {
-	font-size : 18px;
-	color : #515050;
-	text-transform : uppercase;
-	font-weight : 300;
-}
-.counting_sl {
-	text-align : center;
-}
-.counting_sl i {
-	color : #515050;
-	float : left;
-	font-size : 35px;
-	margin-top : 10px;
 }
 
 /* -----------------------------------------------
@@ -656,47 +509,6 @@ transform : translateX(0%);
 .lts_pst a:hover {
 	border-bottom : 1px solid #00AFF0;
 }
-.sngl_pricing ul {
-	border : #ebebeb solid 5px;
-	margin : 0;
-	padding : 0;transition: all 1s ease 0s;
-	-moz-transition: all 1s ease 0s;
-	-webkit-transition: all 1s ease 0s
-}
-.sngl_pricing ul li {
-	color : #666666;
-	font-family : lato;
-	font-size : 14px;
-	list-style : none outside none;
-	text-transform : capitalize;
-	border-top : 1px solid #EBEBEB;
-	padding : 10px 0;
-	text-align : center;
-}
-.sngl_pricing ul li:first-child {
-	border-top : 0;
-}
-.sngl_pricing {
-	text-align : center;
-	border : #ebebeb solid 5px;
-}
-.sngl_pricing:hover {
-	border : #00AFF0 solid 5px;transition: all 1s ease 0s;
-	-moz-transition: all 1s ease 0s;
-	-webkit-transition: all 1s ease 0s
-}
-.sngl_pricing:hover.sngl_pricing h3 {
-	background : none 0 0 repeat scroll #00AFF0;transition: all 1s ease 0s;
-	-moz-transition: all 1s ease 0s;
-	-webkit-transition: all 1s ease 0s
-}
-.sngl_pricing > h2 {
-	color : #fff;
-	font-size : 18px;
-	margin : 0;
-	padding : 30px;
-	text-transform : uppercase;
-}
 .title_bg_1 {
 	background-image : url("../img/basic.jpg");
 	background-position : center center;
@@ -715,13 +527,6 @@ transform : translateX(0%);
 	background-repeat : no-repeat;
 	background-size : 100% 100%;
 }
-.sngl_pricing > h3 {
-	background : none 0 0 repeat scroll #ebebeb;
-	color : #515050;
-	font-size : 48px;
-	margin : 0;
-	padding : 20px 0;
-}
 .currency {
 	font-size : 24px;
 	position : relative;
@@ -737,13 +542,6 @@ transform : translateX(0%);
 	color : #fff;
 	text-transform : uppercase;
 	padding : 10px 30px;
-}
-.sngl_pricing ul {
-	margin : 0;
-	padding : 55px 0;
-}
-.sngl_pricing a {
-	margin-top : 30px;
 }
 #clt_sec {
 	background : #F0F0F0;

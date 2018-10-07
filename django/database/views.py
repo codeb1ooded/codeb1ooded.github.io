@@ -10,4 +10,5 @@ def initDataBase(request):
     initSkills()
     initSkillDiagram()
     initProjects()
+    initTimeline()
     return JsonResponse({"Status":"Success"})

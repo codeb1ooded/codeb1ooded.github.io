@@ -10,6 +10,7 @@ def createHomePage(request):
     all_achievements = []
     all_projects = []
     all_skills = []
+    all_timeline = []
     achievements = Achievements.objects.all().order_by('-ACHIEVEMENT_ID')
     for ach in achievements:
         achievement = {
@@ -37,4 +38,13 @@ def createHomePage(request):
                 'image' : sk.IMAGE
         }
         all_skills.append(skill)
-    return render(request,'index.html', {'achievements': all_achievements, 'projects': all_projects, 'skills':all_skills})
+    timelines = Timeline.objects.all().order_by('-TIMELINE_ID')
+    for tl in timelines:
+        timeline = {
+                'title' : tl.TITLE,
+                'content' : tl.CONTENT,
+                'time' : tl.TIME,
+                'category' : tl.CATEGORY
+        }
+        all_timeline.append(timeline)
+    return render(request,'index.html', {'achievements': all_achievements, 'projects': all_projects, 'skills':all_skills, 'timeline':all_timeline})
