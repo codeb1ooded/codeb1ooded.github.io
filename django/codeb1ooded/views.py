@@ -9,6 +9,7 @@ from database.models import *
 def createHomePage(request):
     all_achievements = []
     all_projects = []
+    all_skills = []
     achievements = Achievements.objects.all().order_by('-ACHIEVEMENT_ID')
     for ach in achievements:
         achievement = {
@@ -19,15 +20,21 @@ def createHomePage(request):
         }
         all_achievements.append(achievement)
     projects = Project.objects.all().order_by('-PROJECT_ID')
-    iterator = 0
     for pro in projects:
         project = {
-                'iterator': iterator,
                 'title' : pro.TITLE,
                 'star_link' : pro.STAR_LINK,
                 'fa_icon' : pro.FA_ICON,
                 'description' : pro.DESCRIPTION
         }
-        iterator += 1
         all_projects.append(project)
-    return render(request,'index.html', {'achievements': all_achievements, 'projects': all_projects})
+    skills = Skills.objects.all().order_by('-SKILL_ID')
+    for sk in skills:
+        skill = {
+                'title' : sk.TITLE,
+                'sub_title' : sk.SUB_TITLE,
+                'description' : sk.DESCRIPTION,
+                'image' : sk.IMAGE
+        }
+        all_skills.append(skill)
+    return render(request,'index.html', {'achievements': all_achievements, 'projects': all_projects, 'skills':all_skills})
