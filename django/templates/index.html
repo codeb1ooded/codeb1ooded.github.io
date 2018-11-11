@@ -10,6 +10,9 @@
 
 	<title> Megha | codeb1ooded </title>
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald:500,600" rel="stylesheet">
+
 	<!-- ICONS -->
 	<link rel="apple-touch-icon" sizes="57x57" href="{% static 'images/favicon/apple-icon-57x57.png' %}">
 	<link rel="apple-touch-icon" sizes="60x60" href="{% static 'images/favicon/apple-icon-60x60.png' %}">
@@ -74,7 +77,7 @@
 										<li><a class="page-scroll" href="index.html">Home</a></li>
 									</li>
 									<li><a class="page-scroll" href="#abt_sec">About</a></li>
-									<li><a class="page-scroll" href="#project_sec">Projects <i class="fa fa-angle-down"></i></a>
+									<!--<li><a class="page-scroll" href="#project_sec">Projects <i class="fa fa-angle-down"></i></a>
 										<ul>
 											<li><a class="page-scroll" href="#">Shikshak Arohan</a></li>
 											<li><a class="page-scroll" href="#">RTI Management System</a></li>
@@ -83,12 +86,12 @@
 											<li><a class="page-scroll" href="#">Eventley</a></li>
 											<li><a class="page-scroll" href="#">Calculator</a></li>
 										</ul>
-									</li>
+									</li>-->
 									<!--<li><a class="page-scroll" href="blog/">Blog</a></li> -->
 									<li><a class="page-scroll" href="#achievement_section">Achievements</a></li>
 									<li><a class="page-scroll" href="#tm_sec">Technical Skills</a></li>
 									<li><a class="page-scroll" href="#ctn_sec">Contact Me</a></li>
-									<!-- <li><a class="page-scroll" href="resume_pdf.pdf" download="Megha_Aggarwal">Resume</a></li> -->
+									<li><a class="page-scroll" href="{% static 'resume/codeb1ooded.pdf' %}" download="Megha_Aggarwal">Resume</a></li> 
 
 								</ul>
 							</div>
@@ -200,12 +203,12 @@
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
 				<div class="title_sec">
 					<h1>ABOUT</h1>
-					<h2 onclick="window.open('resume_pdf.pdf')" onmouseover="this.style.color='#3498db';" onmouseout="this.style.color='#606060';">Hi there, I'm Megha Aggarwal<br> a.k.a. <br>codeb1ooded</h2>
+					<h2 onclick=window.open('{% static "resume/codeb1ooded.pdf" %}') onmouseover="this.style.color='#3498db';" onmouseout="this.style.color='#606060';">Hi there, I'm Megha Aggarwal<br> a.k.a. <br>codeb1ooded</h2>
 				</div>
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
 				<div class="abt">
-					<p>I am a &lt;Developer&gt; by heart and currently, an SE at Microsoft IDC; I am graduated in B.Tech. CSE from Igdtuw, Delhi; I love to &lt;code&gt; and encourage others for the same; The world of tech and how it impacts our day-to-fay life on such a big scale fascinates me;</p>
+					<p>I am a &lt;Developer&gt; by heart and currently, an Software Engineer at Microsoft IDC; I am graduated in B.Tech. CSE from Igdtuw, Delhi; I love to &lt;code&gt; and encourage others for the same; The world of tech and how it impacts our day-to-fay life on such a big scale fascinates me;</p>
 				</div>
 			</div>
 		</div>
@@ -434,6 +437,34 @@
 </section>
 <!-- End progress bar Section -->
 
+
+<!-- start speaking opportunities Section -->
+<div class="speaker_section">
+	{% for opportunity in speaking_opportunities %}
+	<div class="cardContainer inactive">
+		<div class="card">
+			<div class="side front">
+				{% with 'images/speaker_images/'|add:opportunity.image as image_static %}
+					<img src="{% static image_static %}" alt="" class="img"/>
+				{% endwith %}
+				<div class="info">
+					<h2>{{ opportunity.title | safe  }}</h2>
+					<p>{{ opportunity.brief | safe  }}</p>
+				</div>
+			</div>
+			<div class="side back">
+				<div class="info">
+					<h2>Description</h2>
+					<ul>{{ opportunity.content | safe  }}</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+<!-- end speaking opportunities Section -->
+
+
 <!-- start contact us Section -->
 <section id="ctn_sec">
 	<div class="container">
@@ -485,10 +516,10 @@
 					<div class="ft">
 						<ul>
 							<li><a href="https://github.com/codeb1ooded"><i class="fa fa-github"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/megha-aggarwal-772440104"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="https://www.facebook.com/meghaaggarwal.yv"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/codeb1ooded"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://www.facebook.com/codeb1oode"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="https://plus.google.com/+MeghaAggarwalMe"><i class="fa fa-google"></i></a></li>
-							<li><a href="https://twitter.com/Megha__Aggarwal"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://twitter.com/codeb1ooded"><i class="fa fa-twitter"></i></a></li>
 							<!-- <li><a href=""><i class="fa fa-wordpress"></i></a></li> -->
 						</ul>
 					</div>

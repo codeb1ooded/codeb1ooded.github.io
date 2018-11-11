@@ -11,6 +11,7 @@ def createHomePage(request):
     all_projects = []
     all_skills = []
     all_timeline = []
+    all_speaking_opportunities = []
     achievements = Achievements.objects.all().order_by('-ACHIEVEMENT_ID')
     for ach in achievements:
         achievement = {
@@ -47,4 +48,13 @@ def createHomePage(request):
                 'category' : tl.CATEGORY
         }
         all_timeline.append(timeline)
-    return render(request,'index.html', {'achievements': all_achievements, 'projects': all_projects, 'skills':all_skills, 'timeline':all_timeline})
+    speakingOpportunities = SpeakingOpportunities.objects.all().order_by('-SPEAKER_ID')
+    for so in speakingOpportunities:
+        opportunity = {
+                'title' : so.TITLE,
+                'brief' : so.BRIEF,
+                'content' : so.CONTENT,
+                'image' : so.IMAGE
+        }
+        all_speaking_opportunities.append(opportunity)
+    return render(request,'index.html', {'achievements': all_achievements, 'projects': all_projects, 'skills':all_skills, 'timeline':all_timeline, "speaking_opportunities": all_speaking_opportunities})

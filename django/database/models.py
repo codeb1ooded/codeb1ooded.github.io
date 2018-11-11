@@ -67,5 +67,17 @@ class Timeline(models.Model):
     CONTENT = models.CharField(max_length=5000)
     TIME = models.CharField(max_length=100, null=True, blank=True)
     CATEGORY = models.CharField(max_length=100, null=True, blank=True) # normal or inverted
+
     def __str__(self):
 		return str(self.TIMELINE_ID) + '-' +self.TITLE
+
+
+class SpeakingOpportunities(models.Model):
+    SPEAKER_ID = models.IntegerField(primary_key=True)
+    TITLE = models.CharField(max_length=100)
+    BRIEF = models.CharField(max_length=200)
+    CONTENT = models.CharField(max_length=1000, null=True, blank=True)
+    IMAGE = models.CharField(max_length=50, null=True, blank=True)
+
+    def __str__(self):
+        return str(self.SPEAKER_ID) + '-' +self.TITLE

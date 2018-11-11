@@ -385,6 +385,47 @@ def initProjects():
 
 
 def initTimeline():
+    timeline_object = Timeline(TIMELINE_ID = 9,
+                TITLE = 'Software Engineer at Microsoft',
+                CONTENT = """
+                <ul style="padding:0 40px">
+                    <li>Skype for Business, Microsoft Office </li>
+                    <li>Responsible for maintaining Skype for Business Infrastructure </li>
+                    <li>Involves developing of Automation Tools/Framework to enable automatic deployments and updates for entire Skype for Business Infrastructure.</li>
+                    <li>Also worked on implementing the framework of logging for the automation built.</li>
+                    <li>Worked on Azure Log Analytics, Azure logic apps and Azure Storage accounts.</li>
+                </ul>
+                """,
+                TIME = 'JUNE 2018 - PRESENT',
+                CATEGORY = 'timeline-inverted')
+    timeline_object.save()
+    timeline_object = Timeline(TIMELINE_ID = 8,
+                TITLE = 'Participated in Smart India Hackathon 2018',
+                CONTENT = """
+                <ul style="padding:0 40px">
+                    <li>2nd runner up for competition under Government of Assam</li>
+                    <li>Team name mentioned in Winners list on <a href="https://i4c.in/themes/innovation/assets/pdf/smart_india_hackathon_2018_result.pdf">i4c</a></li>
+                    <li>Team Leader of team comprised of 6 girls and two mentors. Team Name : Herricane</li>
+                    <li>Created a product named <a href="#">Rakshak Arohan</a> comprising of both an android app and website.</li>
+                    <li>Product was focused on assisting police to maintain low crime rates.</li>
+                    <li>is a technical solution which creates a real-time map of crime happening in the area along with many other statistics to enhance police capabilities. Based on this data, it also provides the safest and shortest route to the user.</li>
+                </ul>
+                """,
+                TIME = 'MARCH 2018',
+                CATEGORY = '')
+    timeline_object.save()
+    timeline_object = Timeline(TIMELINE_ID = 7,
+                TITLE = 'Winner at Wintathon 2017',
+                CONTENT = """
+                <ul style="padding:0 40px">
+                    <li>Wintathon 2017 was a Women Hackathon organised by LinkedIn</li>
+                    <li>Team  Semicolon comprised of 3 girls.</li>
+                    <li>Created an app called Connect Me with the purpose to connect to people who have attended same events as you, add labels to your connections for future reference, and get the chat summary using ML.</li>
+                </ul>
+                """,
+                TIME = 'NOV 2017',
+                CATEGORY = 'timeline-inverted')
+    timeline_object.save()
     timeline_object = Timeline(TIMELINE_ID = 6,
                 TITLE = 'Android developer at The Testament',
                 CONTENT = """
@@ -423,7 +464,7 @@ def initTimeline():
                     <li>Rotary Mysore West: <a href="https://play.google.com/store/apps/details?id=naddy.rotary"> On playstore </a></li>
                 </ul>
                 """,
-                TIME = 'OCTOBER 2014 - PRESENT',
+                TIME = 'AUG 2016 - NOV 2016',
                 CATEGORY = '')
     timeline_object.save()
     timeline_object = Timeline(TIMELINE_ID = 3,
@@ -431,7 +472,7 @@ def initTimeline():
                 CONTENT = """
                 <ul style="padding:0 40px">
                     <li>From Indira Gandhi Delhi Technical University for Women.</li>
-                    <li>Aggregate percentage till 6th Semester is 85.77%</li>
+                    <li>Aggregate percentage till 6th Semester is 85.65%</li>
                     <li>Upgraded from IT to CSE after 1st Year.</li>
                     <li>Participated in Online social media training during June-July 2016.</li>
                     <li>Took session on git and similar topics.</li>
@@ -464,3 +505,50 @@ def initTimeline():
                 TIME = 'APRIL 2011 - MAY 2012',
                 CATEGORY = 'timeline-inverted')
     timeline_object.save()
+
+
+def initSpeakingOpportunities():
+    opportunity_object = SpeakingOpportunities(SPEAKER_ID = 4,
+                TITLE = 'AI and future of Job panel discussion',
+                BRIEF = 'Part of a panel discussion on the topic with two other pannelists',
+                CONTENT = """
+                <li> 27 October 2018 </li>
+                <li> Footfall: ~ 300-400 people </li>
+                <li> Devfest 2018 organsied by Google Developers Group, Hyderabad </li>
+                <li> Had a panel discussion with two other pannelists on AI and it's effect on future of jobs or whether AI will replace our jobs </li>
+                """,
+                IMAGE = "ai_and_future_of_job.jpg")
+    opportunity_object.save()
+    opportunity_object = SpeakingOpportunities(SPEAKER_ID = 3,
+                TITLE = 'Knock out Opportunities',
+                BRIEF = 'Talked about various opportunities in Tech',
+                CONTENT = """
+                <li> 11 Feburary 2018 </li>
+                <li> Footfall: ~ 50-60 people </li>
+                <li> Organised by Women Techmakers, New Delhi </li>
+                <li> Talked about various opportunities in Tech like internships, scholarhsips, etc. </li>
+                <li> <a href="https://www.meetup.com/GDGNewDelhi/events/247251144/?fbclid=IwAR0GZ0YzfaSBQIwB-3k75C64fY_Q_FvElMH6KrPCUEBr3eZ5FTirFsZR3J4&_cookie-check=KdlmyYWOvX7Fjv4y"> Event Link </a> </li>
+                """,
+                IMAGE = "opportunities_for_women.jpg")
+    opportunity_object.save()
+    opportunity_object = SpeakingOpportunities(SPEAKER_ID = 2,
+                TITLE = 'Lean In Guest Speaker',
+                BRIEF = 'Was inivited by Lean In, IGDTUW as a guest speaker',
+                CONTENT = """
+                <li> 21 November 2017 </li>
+                <li> Footfall: ~ 100-120 people </li>
+                <li> Talked about my personal experience and learnings as I strive to grow </li>
+                <li> Associated with Lean In, IGDTUW </li>
+                """,
+                IMAGE = "lean_in_session.jpg")
+    opportunity_object.save()
+    opportunity_object = SpeakingOpportunities(SPEAKER_ID = 1,
+                TITLE = 'Session on Git and Github',
+                BRIEF = 'Organised a session on Git technology to introduce this technology to juniors in university.',
+                CONTENT = """
+                <li> 04 April 2017 </li>
+                <li> Footfall: ~ 30 people </li>
+                <li> Associated with CSI-IGDTUW </li>
+                """,
+                IMAGE = "git_session.jpg")
+    opportunity_object.save()

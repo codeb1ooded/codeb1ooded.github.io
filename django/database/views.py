@@ -11,4 +11,5 @@ def initDataBase(request):
     initSkillDiagram()
     initProjects()
     initTimeline()
+    initSpeakingOpportunities()
     return JsonResponse({"Status":"Success"})
