@@ -1240,11 +1240,11 @@ a:hover {
 					perspective: 1000px;
 }
 
-.active {
+.cardContainer > .active {
 	-webkit-transform: translateZ(0px) rotateY(180deg) !important;
 			transform: translateZ(0px) rotateY(180deg) !important;
 }
-.active:after {
+.cardContainer > .active:after {
 	display: none;
 }
 
