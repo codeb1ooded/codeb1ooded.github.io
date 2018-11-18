@@ -12,4 +12,5 @@ def initDataBase(request):
     initProjects()
     initTimeline()
     initSpeakingOpportunities()
+    initBlogs()
     return JsonResponse({"Status":"Success"})

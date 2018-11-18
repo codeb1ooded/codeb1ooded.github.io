@@ -552,3 +552,60 @@ def initSpeakingOpportunities():
                 """,
                 IMAGE = "git_session.jpg")
     opportunity_object.save()
+
+
+def initBlogs():
+    blog_object = Blog(BLOG_ID = 6,
+                CLASS = "blog-card alt",
+                TITLE = "From my experience in technology - Part 3",
+                CATEGORY = "Resume, prep special, platforms for practice, interview",
+                DATE = "Jun 30, 2018",
+                BRIEF = "Resume<br/>I keep a lot of focus on keeping length of your resume to one page. This is important to understand that resumes are summary and they should be brief. Also in student life, we hardly have much to write on resumes. So, we should keep the length to one page.",
+                IMAGE_URL = "https://cdn-images-1.medium.com/max/1600/1*tXA2eORpgrh2c5wluU4PtQ.jpeg",
+                BLOG_URL = "https://medium.com/codeblooded/from-my-experience-in-technology-part-3-f74e9b38557c")
+    blog_object.save()
+    blog_object = Blog(BLOG_ID = 5,
+                CLASS = "blog-card",
+                TITLE = "From my experience in technology - Part 2",
+                CATEGORY = "Mananging time, preservance, hackathons",
+                DATE = "Feb 22, 2018",
+                BRIEF = "Since, I am last roll number of class, I generally have a lot of time before my viva. During my 6th semester practical I used to bring my laptop and I had this fever of working with 0 and 1 known as bit manipulation. It was just out of fun and during my practicals, I instead of studying used to do that.",
+                IMAGE_URL = "https://cdn-images-1.medium.com/max/1600/1*1m9imwwx82_pvDOZvrPMWA.jpeg",
+                BLOG_URL = "https://medium.com/codeblooded/from-my-experience-in-technology-part-2-841a0b28a2bf?source=collection_home---2------1---------------------")
+    blog_object.save()
+    blog_object = Blog(BLOG_ID = 4,
+                CLASS = "blog-card alt",
+                TITLE = "From my experience in technology - Part 1",
+                CATEGORY = "how to approach, Projects",
+                DATE = "Jan 27, 2018",
+                BRIEF = "Passion for computer science wasn't so trivial for me. Until my 10th grade, I loved biology and then my interest grew in mathematics but computers were never my cup of tea. I still remember in my 10th grade, my friend got a smartphone and she was flaunting it. I asked her whats new in it, she along with many other features told me its Android. ",
+                IMAGE_URL = "https://cdn-images-1.medium.com/max/1600/1*Nd6RJZgT1pM7C2bpcYLoBA.jpeg",
+                BLOG_URL = "https://medium.com/codeblooded/from-my-experience-in-technology-part-1-322d54a9554f")
+    blog_object.save()
+    blog_object = Blog(BLOG_ID = 3,
+                CLASS = "blog-card",
+                TITLE = "Accenture IWD's celebration",
+                CATEGORY = "Celebration",
+                DATE = "April 23, 2017",
+                BRIEF = "Accenture out of the blue (as far as I know) decided to have an IWD (International Women Day) celebration in my college on 6th April, 2017 and I received a mail that interested students can tell their achievements for felictation ceremony, so did I. Since the achiever's were to be selected by TnP (Training and Placement cell) of our college, I keep it that way.",
+                IMAGE_URL = "",
+                BLOG_URL = "http://codeb1ooded.blogspot.com/2017/03/accenture-iwds-celebration.html")
+    blog_object.save()
+    blog_object = Blog(BLOG_ID = 2,
+                CLASS = "blog-card alt",
+                TITLE = "Smart India Hackathon",
+                CATEGORY = "Smart India Hackathon, Winner",
+                DATE = "April 04, 2017",
+                BRIEF = "Giveup? No!! Its too maintstream :P<br/>So a bit about Smart India Hackathon for those who already don't know. It is considered to be the World's biggest Hackathon which comes under Prime Minister's Digital India movement. It was organized by @mygov and @IndiaKaIdea in association with AICTE, NASSCOM, NIC & MHRD to innovate new ideas and use technology to bring about the changes that the country needs.",
+                IMAGE_URL = "static/images/blogs/sih17.jpg",
+                BLOG_URL = "http://codeb1ooded.blogspot.com/2017/04/smart-india-hackathon.html")
+    blog_object.save()
+    blog_object = Blog(BLOG_ID = 1,
+                CLASS = "blog-card",
+                TITLE = "Introduction to Git and Github",
+                CATEGORY = "Git, Github",
+                DATE = "March 09, 2017",
+                BRIEF = "Why Git? When you have to do a project like a college project with your friends what do you do? I had used Google Drive, DropBox etc. Most probably you must also have use the similar methods. But don't you think these methods are very cumbersome in terms of collaboration or you can say 'A perfect reciepe of disaster' as shown. ",
+                IMAGE_URL = "static/images/blogs/gitsession.jpg",
+                BLOG_URL = "http://codeb1ooded.blogspot.com/2017/03/introduction-to-git-and-github.html")
+    blog_object.save()

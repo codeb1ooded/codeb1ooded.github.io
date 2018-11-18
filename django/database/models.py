@@ -81,3 +81,17 @@ class SpeakingOpportunities(models.Model):
 
     def __str__(self):
         return str(self.SPEAKER_ID) + '-' +self.TITLE
+
+
+class Blog(models.Model):
+    BLOG_ID = models.IntegerField(primary_key=True)
+    CLASS = models.CharField(max_length=20)
+    TITLE = models.CharField(max_length=100)
+    CATEGORY = models.CharField(max_length=50)
+    DATE = models.CharField(max_length=20)
+    BRIEF = models.CharField(max_length=250)
+    IMAGE_URL = models.CharField(max_length=100, null=True, blank=True)
+    BLOG_URL = models.CharField(max_length=100, null=True, blank=True)
+
+    def __str__(self):
+        return str(self.BLOG_ID) + '-' +self.TITLE
