@@ -209,8 +209,7 @@ def initProjects():
                 SUBTITLE = 'Inspired by goals of tech communities like Systers in a unique way to promote women in tech',
                 TYPE = 'Website',
                 IMAGE = None,
-                DESCRIPTION = '<em>Problem</em><br/>We went to ACM-ICPC regionals<br/>In about 400 participants there were not even 10 girls while there are women in women hackathons!!<br/>Why??<br/>We tried to identify the root cause of problem. Why it becomes difficult to reach out to all girls?? We present a solution which empowers them to come out of their shell with the comfort of their home, school or university.We motivate & aware them to seek help and join other tech communities like Systers, Women Techmakers, etc.' +
-                '<em>Solution</em><br/> <ol><li>Awareness & Scattered Resources</li><li>Unable to find Mentors</li><li>Unidentified Questions</li><li>Been there, done that!!</li><liExpand Tech Circles></li><li>Get Identified</li><li>More women in tech</li></ol>',
+                DESCRIPTION = '<em>Problem</em><br/>We went to ACM-ICPC regionals<br/>In about 400 participants there were not even 10 girls while there are women in women hackathons!!<br/>Why??<br/>We tried to identify the root cause of problem. Why it becomes difficult to reach out to all girls?? We present a solution which empowers them to come out of their shell with the comfort of their home, school or university.We motivate & aware them to seek help and join other tech communities like Systers, Women Techmakers, etc.',
                 DATE_START = "2018-02-01",
                 DATE_END = "2018-02-28",
                 STATUS = 'Workable Protoype',
@@ -588,7 +587,7 @@ def initBlogs():
                 CATEGORY = "Celebration",
                 DATE = "April 23, 2017",
                 BRIEF = "Accenture out of the blue (as far as I know) decided to have an IWD (International Women Day) celebration in my college on 6th April, 2017 and I received a mail that interested students can tell their achievements for felictation ceremony, so did I. Since the achiever's were to be selected by TnP (Training and Placement cell) of our college, I keep it that way.",
-                IMAGE_URL = "",
+                IMAGE_URL = "static/images/blogs/AccentureIWD.jpeg",
                 BLOG_URL = "http://codeb1ooded.blogspot.com/2017/03/accenture-iwds-celebration.html")
     blog_object.save()
     blog_object = Blog(BLOG_ID = 2,

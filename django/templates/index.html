@@ -74,28 +74,15 @@
 								</button>
 								<div id="navbar">
 									<ul>
-										<li><a class="page-scroll" href="index.html">Home</a></li>
-									</li>
-									<li><a class="page-scroll" href="#abt_sec">About</a></li>
-									<!--<li><a class="page-scroll" href="#project_sec">Projects <i class="fa fa-angle-down"></i></a>
-										<ul>
-											<li><a class="page-scroll" href="#">Shikshak Arohan</a></li>
-											<li><a class="page-scroll" href="#">RTI Management System</a></li>
-											<li><a class="page-scroll" href="#">MoviePlate Android App</a></li>
-											<li><a class="page-scroll" href="#">Othello</a></li>
-											<li><a class="page-scroll" href="#">Eventley</a></li>
-											<li><a class="page-scroll" href="#">Calculator</a></li>
-										</ul>
-									</li>-->
-									<li><a class="page-scroll" href="#achievement_section">Achievements</a></li>
-									<li><a class="page-scroll" href="#project_sec">Project</a></li>
-									<li><a class="page-scroll" href="#title-work-experience">Timeline</a></li>
-									<li><a class="page-scroll" href="#tm_sec">Technical Skills</a></li>
-									<li><a class="page-scroll" href="#blog_section">Blog</a></li>
-									<li><a class="page-scroll" href="#ctn_sec">Contact Me</a></li>
-									<li><a class="page-scroll" href="{% static 'resume/codeb1ooded.pdf' %}" download="Megha_Aggarwal">Resume</a></li> 
-
-								</ul>
+										<li><a class="page-scroll" href="#abt_sec">About</a></li>
+										<li><a class="page-scroll" href="#achievement_section">Achievements</a></li>
+										<li><a class="page-scroll" href="#project_sec">Project</a></li>
+										<li><a class="page-scroll" href="#title-work-experience">Timeline</a></li>
+										<li><a class="page-scroll" href="#tm_sec">Technical Skills</a></li>
+										<li><a class="page-scroll" href="#blog_section">Blog</a></li>
+										<li><a class="page-scroll" href="#ctn_sec">Contact Me</a></li>
+										<li><a class="page-scroll" href="{% static 'resume/codeb1ooded.pdf' %}" download="Megha_Aggarwal">Resume</a></li> 
+									</ul>
 							</div>
 						</nav>
 					</div>
@@ -246,8 +233,8 @@
 	<div class="container">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 			<div class="title_sec">
-				<h1>MY PROJECTS</h1>
-				<h2>SOME OF MY PROJECTS WITH SOME IN WORKING PHASE</h2>
+				<h1>PERSONAL PROJECTS</h1>
+				<h2>SOME OF THESE PROJECTS ARE IN WORKING PHASE</h2>
 			</div>
 
 			{% for project in projects %}
@@ -257,10 +244,10 @@
 			{% endif %}
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<a href="{{ project.star_link | safe }}">
-					<div class="service">
+					<div class="project_tile">
 						<i class="{{ project.fa_icon | safe }}"></i>
 						<h2>{{ project.title | safe }}</h2>
-						<div class="service_hoverly">
+						<div class="project_tile_hoverly">
 							<i class="{{ project.fa_icon | safe }}"></i>
 							<h2>{{ project.title | safe }}</h2>
 							<p>{{ project.description | safe }}</p>
@@ -329,7 +316,7 @@
 <!-- End our team Section -->
 
 <!-- start progress bar Section -->
-<section id="skill_sec">
+<section id="skill_diag_sec">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
@@ -414,6 +401,8 @@
 
 <!-- start speaking opportunities Section -->
 <div class="speaker_section">
+	<h2 style="text-align: center; color: white;"> Community Involvments </h2>
+<div class="speaker_section_tiles">
 	{% for opportunity in speaking_opportunities %}
 	<div class="cardContainer inactive">
 		<div class="card">
@@ -437,6 +426,7 @@
 	{% endfor %}
 </div>
 <!-- end speaking opportunities Section -->
+</div>
 
 
 <!-- start contact us Section -->
@@ -451,7 +441,6 @@
 			</div>
 			<div class="col-sm-6">
 				<div id="cnt_form">
-					<h3> I also have some private projects(not on github), if you want to know about them, please write to me.</h3>
 					<form id="contact-form" class="contact" name="contact-form" method="post" action="#">
 						<div class="form-group">
 							<input type="text" name="name" class="form-control name-field" required="required" placeholder="Your Name*">
@@ -494,7 +483,6 @@
 							<li><a href="https://www.facebook.com/codeb1oode"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="https://plus.google.com/+MeghaAggarwalMe"><i class="fa fa-google"></i></a></li>
 							<li><a href="https://twitter.com/codeb1ooded"><i class="fa fa-twitter"></i></a></li>
-							<!-- <li><a href=""><i class="fa fa-wordpress"></i></a></li> -->
 						</ul>
 					</div>
 					<ul class="copy_right">
