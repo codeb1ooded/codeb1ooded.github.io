@@ -1,0 +1,538 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Megha, Aggarwal, codeb1ooded, developer, portfolio">
+	<meta name="Description" content="Portfolio website of Megha Aggarwal, identified as Android  (github handle: codeb1ooded)">
+
+	<title> Megha | codeb1ooded </title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald:500,600" rel="stylesheet">
+
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="57x57" href="{% static 'images/favicon/apple-icon-57x57.png' %}">
+	<link rel="apple-touch-icon" sizes="60x60" href="{% static 'images/favicon/apple-icon-60x60.png' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/favicon/apple-icon-72x72.png' %}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{% static 'images/favicon/apple-icon-76x76.png' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/favicon/apple-icon-114x114.png' %}">
+	<link rel="apple-touch-icon" sizes="120x120" href="{% static 'images/favicon/apple-icon-120x120.png' %}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{% static 'images/favicon/apple-icon-144x144.png' %}">
+	<link rel="apple-touch-icon" sizes="152x152" href="{% static 'images/favicon/apple-icon-152x152.png' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple-icon-180x180.png' %}">
+	<link rel="icon" type="image/png" sizes="192x192"  href="{% static 'images/favicon/android-icon-192x192.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{% static 'images/favicon/favicon-96x96.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- CSS Stylesheets -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/icofont.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body >
+	<!-- start preloader -->
+	<div id="loader-wrapper">
+		<div class="logo"></div>
+		<div id="loader">
+		</div>
+	</div>
+	<!-- end preloader -->
+
+	<!-- Start Header Section -->
+	<header class="main_menu_sec navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<div class="lft_hd">
+						<a href="#"><img src="{% static 'images/logo.png' %}" alt="Logo"/></a>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9 col-sm-12">
+					<div class="rgt_hd">
+						<div class="main_menu">
+							<nav id="nav_menu">
+								<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<div id="navbar">
+									<ul>
+										<li><a class="page-scroll" href="#abt_sec">About</a></li>
+										<li><a class="page-scroll" href="#achievement_section">Achievements</a></li>
+										<li><a class="page-scroll" href="#project_sec">Project</a></li>
+										<li><a class="page-scroll" href="#title-work-experience">Timeline</a></li>
+										<li><a class="page-scroll" href="#tm_sec">Technical Skills</a></li>
+										<li><a class="page-scroll" href="#blog_section">Blog</a></li>
+										<li><a class="page-scroll" href="#ctn_sec">Contact Me</a></li>
+										<li><a class="page-scroll" href="{% static 'resume/codeb1ooded.pdf' %}" download="Megha_Aggarwal">Resume</a></li> 
+									</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- End Header Section -->
+
+<!-- start slider Section -->
+<section id="slider_sec">
+	<div class="container">
+		<div class="slider">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="wrap_caption">
+							<div class="caption_carousel">
+								<h1>Hey, Glad you are here!! :)</h1>
+								<p class="above_caption_carousel"> Keep scrolling to know </p><br>
+								<p class="below_caption_carousel"> more about me.... </p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="wrap_caption">
+							<div class="caption_carousel">
+								<h1>Projects</h1>
+								<p class="above_caption_carousel"> Rakshak Arohan, EmpowerHer++, Shikshak Arohan </p><br>
+								<p class="middle_caption_carousel"> RTI Management System, Movieplate Android App </p><br>
+								<p class="below_caption_carousel"> Eventley, Calculator app </p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="wrap_caption">
+							<div class="caption_carousel">
+								<h1>Achievements</h1>
+								<p class="above_caption_carousel"> Winner @ Wintathon, GHCI 2017 scholar, ACM ICPC regional partcipant </p><br>
+								<p class="middle_caption_carousel"> Winner @ Smart India Hackathon </p><br>
+								<p class="below_caption_carousel"> Aziz Premji Award, Codediva, Cryptocodz </p>
+							</div>
+						</div>
+					</div>
+					<div class="item ">
+						<div class="wrap_caption">
+							<div class="caption_carousel">
+								<h1>Skills</h1>
+								<p class="above_caption_carousel"> Android App Development, Git & Github, Algorithm, Databases</p><br>
+								<p class="below_caption_carousel">Linux, C/C++, Python, Java, Django, PHP, Xampp</p>
+							</div>
+						</div>
+					</div>
+					<div class="item ">
+						<div class="wrap_caption">
+							<div class="caption_carousel">
+								<h1>Education</h1>
+								<p class="above_caption_carousel"> IGDTUW(B.Tech-CSE) </p><br>
+								<p class="middle_caption_carousel"> Vivekanand School(12<sup>th</sup>) </p><br>
+								<p class="below_caption_carousel"> Nav Jeevan Adarsh Public School (10<sup>th</sup>)</p>
+							</div>
+						</div>
+					</div>
+					<!--<div class="item ">
+						<div class="wrap_caption">
+							<div class="caption_carousel">
+								<h1>Positions of Responsibility</h1>
+								<p class="above_caption_carousel">Member of EM team in Taarangana, Volunteer in publicity team of Espectro</p><br>
+								<p class="below_caption_carousel">Member of EM team of Technoliterati Society, Voluteered in Annual fest of LFT, DWD</p>
+							</div>
+						</div>
+					</div> -->
+				</div>
+
+				<!-- Controls -->
+				<a class="left left_crousel_btn" href="#carousel-example-generic" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right right_crousel_btn" href="#carousel-example-generic" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!-- End slider Section -->
+
+<!-- start about Section -->
+<section id="abt_sec">
+	<div class="container">
+		<div class="row" style="text-align:center">
+			<img src="{% static 'images/semicolon.jpeg' %}" alt="Semicolon logo" align="middle">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<h1>ABOUT</h1>
+					<h2 onclick=window.open('{% static "resume/codeb1ooded.pdf" %}') onmouseover="this.style.color='#3498db';" onmouseout="this.style.color='#606060';">Hi there, I'm Megha Aggarwal<br> a.k.a. <br>codeb1ooded</h2>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="abt">
+					<p>I am a &lt;Developer&gt; by heart and currently, an Software Engineer at Microsoft IDC; I am graduated in B.Tech. CSE from Igdtuw, Delhi; I love to &lt;code&gt; and encourage others for the same; The world of tech and how it impacts our day-to-fay life on such a big scale fascinates me;</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End About Section -->
+
+<!-- start our achievement Section -->
+<section id="achievement_section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="all_tstm">
+					{% for achievement in achievements %}
+					<div class="clnt_tstm">
+						<div class="sngl_tstm">
+							<i class="fa fa-quote-right"></i>
+							<h3>{{ achievement.subtitle | safe  }}</h3>
+							<p>{{ achievement.description | safe }}</p>
+							<h6>{{ achievement.issuer | safe  }}</h6>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End our achievement Section -->
+
+<!-- start Project Section -->
+<section id="project_sec">
+	<div class="container">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+			<div class="title_sec">
+				<h1>PERSONAL PROJECTS</h1>
+				<h2>SOME OF THESE PROJECTS ARE IN WORKING PHASE</h2>
+			</div>
+
+			{% for project in projects %}
+			{% if forloop.counter0|divisibleby:"3" %}
+				</div>
+				<div class="row">
+			{% endif %}
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<a href="{{ project.star_link | safe }}">
+					<div class="project_tile">
+						<i class="{{ project.fa_icon | safe }}"></i>
+						<h2>{{ project.title | safe }}</h2>
+						<div class="project_tile_hoverly">
+							<i class="{{ project.fa_icon | safe }}"></i>
+							<h2>{{ project.title | safe }}</h2>
+							<p>{{ project.description | safe }}</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+		</div>
+	</div>
+</section>
+<br><br><br><br><br><br><br>
+<!-- End Service Section -->
+
+<h2 id="title-work-experience">Education & Work Experience</h2>
+<div id="container-timeline">
+	<ul class="timeline">
+		{% for event in timeline %}
+		<li class="{{ event.category | safe }}">
+			<div class="timeline-badge">
+				<a><i class="fa fa-circle" id=""></i></a>
+			</div>
+			<div class="timeline-panel">
+				<div class="timeline-heading">
+					<h4>{{ event.title | safe }}</h4>
+				</div>
+				<div class="timeline-body"> {{ event.content | safe }} </div>
+				<div class="timeline-footer">
+					<p class="text-right">{{ event.time | safe }}</p>
+				</div>
+			</div>
+		</li>
+		{% endfor %}
+
+		<li class="clearfix no-float"></li>
+	</ul>
+</div>
+
+<!-- start Skills Section -->
+<section id="tm_sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<h1>TECHNICAL SKILLS</h1>
+					<h2>Programming languages, Software packages, Web frameworks, Version Control, etc.</h2>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12">
+				<div class="all_team">
+					{% for skill in skills %}
+					<div class="sngl_team">
+						{% with 'images/'|add:skill.image as image_static %}
+							<img src="{% static image_static %}" alt=""/>
+						{% endwith %}
+						<h3> {{ skill.title | safe }} <span>{{ skill.sub_title | safe }}</span></h3>
+						<p>{{ skill.description | safe }}</p>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End our team Section -->
+
+<!-- start progress bar Section -->
+<section id="skill_diag_sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<h1>My Skill diagram</h1>
+					<h2 style="color:#000000">I am a software developer</h2>
+				</div>
+			</div>
+			<div class="skills progress-bar1">
+				<ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInLeft">
+					<li class="progress">
+						<div class="progress-bar" data-width="75">
+							compile 'android.app:development-v16:21.2.97' 75%
+						</div>
+					</li>
+					<li class="progress">
+						<div class="progress-bar" data-width="50">
+							#include&lt;C/C++&gt; 50%
+						</div>
+					</li>
+					<li class="progress">
+						<div class="progress-bar" data-width="80">
+							&lt;HTML/CSS Design&gt; 80%
+						</div>
+					</li>
+					<li class="progress">
+						<div class="progress-bar" data-width="70">
+							getElementById(Javascript) 70%
+						</div>
+					</li>
+				</ul>
+				<ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInRight">
+					<li class="progress">
+						<div class="progress-bar" data-width="65">
+							import Java; 65%
+						</div>
+					</li>
+					<li class="progress">
+						<div class="progress-bar" data-width="75">
+							Git & --Github 75%
+						</div>
+					</li>
+					<li class="progress">
+						<div class="progress-bar" data-width="85">
+							Data-&gt;Structures-&gt;and-&gt;Algorithms 85%
+						</div>
+					</li>
+					<li class="progress">
+						<div class="progress-bar" data-width="70">
+							CREATE TABLE "SQL and Databases"; 70%
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End progress bar Section -->
+
+<div id="blog_section">
+	<div class="title_sec" style="flex:1 100%;">
+		<h1>BLOGS</h1>
+	</div>
+	{% for blog in blogs %}
+	<div class="{{ blog.class | safe }}">
+    	<div class="meta">
+      		<div class="photo"><img style="max-width:150%; max-height:150%; object-fit: fill;" src="{{ blog.image}}"></img></div>
+      		<ul class="details">
+        		<li class="date">{{ blog.date | safe }}</li>
+        		<li class="tags">{{ blog.category | safe }}</li>
+     		</ul>
+    	</div>
+    	<div class="description">
+      		<h1>{{ blog.title | safe }}</h1>
+      		<!-- <h2></h2> -->
+      		<p>{{ blog.brief | safe }}</p>
+      		<p class="read-more"><a href="{{ blog.blog_url | safe }}">Read More</a></p>
+    	</div>
+	</div>
+	{% endfor %}
+</div>
+
+<!-- start speaking opportunities Section -->
+<div class="speaker_section">
+	<h2 style="text-align: center; color: white;"> Community Involvments </h2>
+<div class="speaker_section_tiles">
+	{% for opportunity in speaking_opportunities %}
+	<div class="cardContainer inactive">
+		<div class="card">
+			<div class="side front">
+				{% with 'images/speaker_images/'|add:opportunity.image as image_static %}
+					<img src="{% static image_static %}" alt="" class="img"/>
+				{% endwith %}
+				<div class="info">
+					<h2>{{ opportunity.title | safe }}</h2>
+					<p>{{ opportunity.brief | safe }}</p>
+				</div>
+			</div>
+			<div class="side back">
+				<div class="info">
+					<h2>Description</h2>
+					<ul>{{ opportunity.content | safe }}</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+<!-- end speaking opportunities Section -->
+</div>
+
+
+<!-- start contact us Section -->
+<section id="ctn_sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<h1>Contact Info</h1>
+					<h2>A learner and software developer from Delhi, India</h2>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div id="cnt_form">
+					<form id="contact-form" class="contact" name="contact-form" method="post" action="#">
+						<div class="form-group">
+							<input type="text" name="name" class="form-control name-field" required="required" placeholder="Your Name*">
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control mail-field" required="required" placeholder="Your Email*">
+						</div>
+						<div class="form-group">
+							<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message*"></textarea>
+						</div>
+						<div class="form-group">
+							<button type="submit" name="submit" class="btn btn-primary" value="Send">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6">
+				<div class="cnt_info">
+					<ul>
+						<li><a href="http://igdtuw.ac.in/"><i class="fa fa-institution"></i><p>Indira Gandhi Delhi Technical University for Women</p></a></li>
+						<li><div id="mail_to_me" onclick='window.open("mailto:meghaaggarwal493@gmail.com");'><i class="fa fa-envelope"></i><p>meghaaggarwal493@gmail.com</p><div></li>
+							<li><a href="https://github.com/codeb1ooded"><i class="fa fa-github"></i><p>codeb1ooded</p></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End contact us  Section -->
+
+	<!-- start footer Section -->
+	<footer id="ft_sec" style="background-color:#D1DBDD">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="ft">
+						<ul>
+							<li><a href="https://github.com/codeb1ooded"><i class="fa fa-github"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/codeb1ooded"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://www.facebook.com/codeb1oode"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://plus.google.com/+MeghaAggarwalMe"><i class="fa fa-google"></i></a></li>
+							<li><a href="https://twitter.com/codeb1ooded"><i class="fa fa-twitter"></i></a></li>
+						</ul>
+					</div>
+					<ul class="copy_right">
+						<li>&copy;Megha Aggarwal</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Section -->
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+	<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/appear.js' %}"></script>
+	<script src="{% static 'js/waypoints.min.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/showHide.js' %}"></script>
+	<script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+	<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+	<script src="{% static 'js/scrolling-nav.js' %}"></script>
+	<script src="{% static 'js/plugins.js' %}"></script>
+
+	<script src="{% static 'js/main.js' %}"></script>
+
+	<script src="{% static 'js/showHide.js' %}" type="text/javascript"></script>
+
+	<script>
+
+	//Hide Overflow of Body on DOM Ready //
+	$(document).ready(function(){
+		$("body").css("overflow", "hidden");
+	});
+
+	// Show Overflow of Body when Everything has Loaded
+	$(window).load(function(){
+		$("body").css("overflow", "visible");
+		var nice=$('html').niceScroll({
+			cursorborder:"5",
+			cursorcolor:"#00AFF0",
+			cursorwidth:"3px",
+			boxzoom:true,
+			autohidemode:true
+		});
+
+	});
+	</script>
+
+
+
+</body>
+</html>
