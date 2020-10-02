@@ -1,16 +1,22 @@
 from .models import *
 
 def initAchievements():
+    achievement = Achievements(ACHIEVEMENT_ID = 12,
+                               TITLE = 'Smart India Hackathon 2020',
+                               SUB_TITLE = 'Winner | Mentor - Smart India Hackathon 2020',
+                               DESCRIPTION = '',
+                               ISSUER = 'AICTE')
+    achievement.save()
     achievement = Achievements(ACHIEVEMENT_ID = 11,
-							   TITLE = 'Smart India Hackathon 2018',
-							   SUB_TITLE = '2nd runner up | Smart India Hackathon 2018',
-							   DESCRIPTION = 'Rakshak Arohan | Team Herricane | Team Lead | Worked on the goals of enhancing police capabilities in various ways to provide safe and secure environment. It\'s main feature is to provide safest and shortest path to people based on previous crimes and their intensity.',
-							   ISSUER = 'AICTE, Govt of Assam, GOI')
+                               TITLE = 'Smart India Hackathon 2018',
+                               SUB_TITLE = '2nd runner up | Smart India Hackathon 2018',
+                               DESCRIPTION = 'Rakshak Arohan | Team Herricane | Team Lead | Worked on the goals of enhancing police capabilities in various ways to provide safe and secure environment. It\'s main feature is to provide safest and shortest path to people based on previous crimes and their intensity.',
+                               ISSUER = 'AICTE, Govt of Assam, GOI')
     achievement.save()
     achievement = Achievements(ACHIEVEMENT_ID = 10,
 							   TITLE = 'Wintathon 2017',
 							   SUB_TITLE = 'Winner | Wintathon 2017',
-							   DESCRIPTION = 'ConnectMe | Team Semicolon | Android person & Pitecher | LinkedIn is focused towards business and employment related networking. With this goal, ConnectMe assist you to connect to people you met somewhere in an event, add tags to them (so that you can remember where you met them) and also summarise your chat to remember what you were talking about.',
+							   DESCRIPTION = 'ConnectMe | Team Semicolon | Android developer & Pitcher | LinkedIn is focused towards business and employment related networking. With this goal, ConnectMe assist you to connect to people you met somewhere in an event, add tags to them (so that you can remember where you met them) and also summarise your chat to remember what you were talking about.',
 							   ISSUER = 'LinkedIn')
     achievement.save()
     achievement = Achievements(ACHIEVEMENT_ID = 9,
@@ -384,6 +390,16 @@ def initProjects():
 
 
 def initTimeline():
+    timeline_object = Timeline(TIMELINE_ID = 10,
+                TITLE = 'Software Engineer at Google',
+                CONTENT = """
+                <ul style="padding:0 40px">
+                    <li>Geo User Generated Content, Google Maps</li>
+                </ul>
+                """,
+                TIME = 'Feb 2019 - PRESENT',
+                CATEGORY = '')
+    timeline_object.save()
     timeline_object = Timeline(TIMELINE_ID = 9,
                 TITLE = 'Software Engineer at Microsoft',
                 CONTENT = """
@@ -395,7 +411,7 @@ def initTimeline():
                     <li>Worked on Azure Log Analytics, Azure logic apps and Azure Storage accounts.</li>
                 </ul>
                 """,
-                TIME = 'JUNE 2018 - PRESENT',
+                TIME = 'JUNE 2018 - Feb 2019',
                 CATEGORY = 'timeline-inverted')
     timeline_object.save()
     timeline_object = Timeline(TIMELINE_ID = 8,

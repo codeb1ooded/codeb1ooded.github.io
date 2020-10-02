@@ -10,11 +10,12 @@ Software Developer | Hackthon (SIH-2017, SIH-2018, Wintathon-2017) winner | Hack
 <br>
 Tech Community Contributor | Ex-Director @ WWC-Hyderabad 
 <br>
+Link to portfolio: http://codeb1ooded.herokuapp.com/
+<br>
 <br>
 <br>
 [LinkedIn](https://www.linkedin.com/in/codeb1ooded/) | [Medium](https://medium.com/codeblooded)
 <br>
 [Email](meghaaggarwal493@gmail.com)
 <br>
-Link to portfolio: http://codeb1ooded.herokuapp.com/
 **For More Information, Visit [Here](http://codeb1ooded.herokuapp.com/). :smile:**
