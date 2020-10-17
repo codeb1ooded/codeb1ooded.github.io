@@ -390,14 +390,29 @@ def initProjects():
 
 
 def initTimeline():
+    timeline_object = Timeline(TIMELINE_ID = 11,
+                TITLE = 'Mentored in Smart India Hackathon 2020',
+                CONTENT = """
+                <ul style="padding:0 40px">
+                    <li>Mentored a team of 6 girls in Hackathon</li>
+                    <li><a href="https://drive.google.com/file/d/19xspuAMgLUBVa1ct_gat_hiWNEtcnwrK/view?usp=sharing">Sashakt Divyang</a>: A solution made with empathy to empower differently abled categories like blind, dumb, deaf, dyslexic and physically challeged persons.</li>
+                    <li>Features like OCR recognition, speech to text, text to speech, voice and key navigation, multi-lingual etc.</li>
+                    <li>Team Mind Optimizer won first prize in the problem statement.</li>
+                </ul>
+                """,
+                TIME = 'AUGUST 2020',
+                CATEGORY = 'timeline-inverted')
+    timeline_object.save()
     timeline_object = Timeline(TIMELINE_ID = 10,
                 TITLE = 'Software Engineer at Google',
                 CONTENT = """
                 <ul style="padding:0 40px">
                     <li>Geo User Generated Content, Google Maps</li>
+                    <li>Ensuring the quality of data on Google Maps and helping prevent vandalism.</li>
+                    <li>Technologies: tensorflow, vizier, data analysis, etc.</li>
                 </ul>
                 """,
-                TIME = 'Feb 2019 - PRESENT',
+                TIME = 'Feb 2020 - PRESENT',
                 CATEGORY = '')
     timeline_object.save()
     timeline_object = Timeline(TIMELINE_ID = 9,
@@ -411,7 +426,7 @@ def initTimeline():
                     <li>Worked on Azure Log Analytics, Azure logic apps and Azure Storage accounts.</li>
                 </ul>
                 """,
-                TIME = 'JUNE 2018 - Feb 2019',
+                TIME = 'JUNE 2018 - Feb 2020',
                 CATEGORY = 'timeline-inverted')
     timeline_object.save()
     timeline_object = Timeline(TIMELINE_ID = 8,
