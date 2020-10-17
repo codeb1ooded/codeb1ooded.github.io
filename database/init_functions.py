@@ -4,7 +4,7 @@ def initAchievements():
     achievement = Achievements(ACHIEVEMENT_ID = 12,
                                TITLE = 'Smart India Hackathon 2020',
                                SUB_TITLE = 'Winner | Mentor - Smart India Hackathon 2020',
-                               DESCRIPTION = '',
+                               DESCRIPTION = 'Sashakt Divyang: A solution made with empathy to empower differently abled categories like blind, dumb, deaf, dyslexic and physically challeged persons.',
                                ISSUER = 'AICTE')
     achievement.save()
     achievement = Achievements(ACHIEVEMENT_ID = 11,
