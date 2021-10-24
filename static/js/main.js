@@ -60,7 +60,7 @@ jQuery(document).ready(function($){
 /*----------------------------------------------------*/
 /* Achievements crousel
 /*----------------------------------------------------*/
-	$('.all_tstm').owlCarousel({
+	$('.all_highlight').owlCarousel({
 		items:1,
 		loop:true,
 		margin:10,
